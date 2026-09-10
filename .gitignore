@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://www.dartlang.org/guides/libraries/private-files
 
 # Files and directories created by pub
@@ -27,3 +28,16 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+=======
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+.metadata
+.packages
+.pub/
+build/
+android/.gradle/
+android/local.properties
+*.iml
+>>>>>>> main
