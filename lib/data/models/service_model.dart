@@ -40,8 +40,9 @@ class ServiceModelAdapter extends TypeAdapter<ServiceModel> {
 
   @override
   ServiceModel read(BinaryReader reader) {
+    final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
-      for (var i = 0; i < reader.readByte(); i++)
+      for (var i = 0; i < numOfFields; i++)
         reader.readByte(): reader.read(),
     };
     return ServiceModel(
